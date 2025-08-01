@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esperia Design Library-Iconography</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="icons.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        border: "hsl(var(--border))",
+                        input: "hsl(var(--input))",
+                        ring: "hsl(var(--ring))",
+                        background: "hsl(var(--background))",
+                        foreground: "hsl(var(--foreground))",
+                        primary: {
+                            DEFAULT: "hsl(var(--primary))",
+                            foreground: "hsl(var(--primary-foreground))",
+                        },
+                        secondary: {
+                            DEFAULT: "hsl(var(--secondary))",
+                            foreground: "hsl(var(--secondary-foreground))",
+                        },
+                        destructive: {
+                            DEFAULT: "hsl(var(--destructive))",
+                            foreground: "hsl(var(--destructive-foreground))",
+                        },
+                        muted: {
+                            DEFAULT: "hsl(var(--muted))",
+                            foreground: "hsl(var(--muted-foreground))",
+                        },
+                        accent: {
+                            DEFAULT: "hsl(var(--accent))",
+                            foreground: "hsl(var(--accent-foreground))",
+                        },
+                        popover: {
+                            DEFAULT: "hsl(var(--popover))",
+                            foreground: "hsl(var(--popover-foreground))",
+                        },
+                        card: {
+                            DEFAULT: "hsl(var(--card))",
+                            foreground: "hsl(var(--card-foreground))",
+                        },
+                    },
+                    borderRadius: {
+                        lg: "var(--radius)",
+                        md: "calc(var(--radius) - 2px)",
+                        sm: "calc(var(--radius) - 4px)",
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        :root {
+            --background: 0 0% 100%;
+            --foreground: 222.2 84% 4.9%;
+            --card: 0 0% 100%;
+            --card-foreground: 222.2 84% 4.9%;
+            --popover: 0 0% 100%;
+            --popover-foreground: 222.2 84% 4.9%;
+            --primary: 222.2 47.4% 11.2%;
+            --primary-foreground: 210 40% 98%;
+            --secondary: 210 40% 96%;
+            --secondary-foreground: 222.2 84% 4.9%;
+            --muted: 210 40% 96%;
+            --muted-foreground: 215.4 16.3% 46.9%;
+            --accent: 210 40% 96%;
+            --accent-foreground: 222.2 84% 4.9%;
+            --destructive: 0 84.2% 60.2%;
+            --destructive-foreground: 210 40% 98%;
+            --border: 214.3 31.8% 91.4%;
+            --input: 214.3 31.8% 91.4%;
+            --ring: 222.2 84% 4.9%;
+            --radius: 0.5rem;
+        }
+
+        * {
+            border-color: hsl(var(--border));
+        }
+
+        body {
+            background-color: hsl(var(--background));
+            color: hsl(var(--foreground));
+        }
+
+        .card {
+            background-color: hsl(var(--card));
+            color: hsl(var(--card-foreground));
+        }
+
+        .btn-primary {
+            background-color: hsl(var(--primary));
+            color: hsl(var(--primary-foreground));
+        }
+
+        .btn-secondary {
+            background-color: hsl(var(--secondary));
+            color: hsl(var(--secondary-foreground));
+        }
+
+        .text-muted {
+            color: hsl(var(--muted-foreground));
+        }
+
+        .bg-muted {
+            background-color: hsl(var(--muted));
+        }
+
+        .border-input {
+            border-color: hsl(var(--input));
+        }
+
+        .focus-ring {
+            --tw-ring-color: hsl(var(--ring));
+        }
+
+        .icon-card {
+            transition: all 0.2s ease-in-out;
+        }
+
+        .icon-card:hover {
+            transform: translateY(-1px);
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            border-radius: calc(var(--radius) - 2px);
+            padding: 0.25rem 0.5rem;
+            font-size: 0.75rem;
+            font-weight: 500;
+            line-height: 1;
+        }
+
+        .badge-pws {
+            background-color: hsl(221.2 83.2% 53.3%);
+            color: hsl(210 40% 98%);
+        }
+
+        .badge-mws {
+            background-color: hsl(142.1 76.2% 36.3%);
+            color: hsl(210 40% 98%);
+        }
+
+        .badge-shared {
+            background: linear-gradient(45deg, hsl(221.2 83.2% 53.3%), hsl(142.1 76.2% 36.3%));
+            color: hsl(210 40% 98%);
+        }
+
+        .badge-outline {
+            background-color: transparent;
+            border: 1px solid hsl(var(--border));
+            color: hsl(var(--foreground));
+        }
+
+        .btn-ghost {
+            background-color: transparent;
+            color: hsl(var(--foreground));
+        }
+
+        .btn-ghost:hover {
+            background-color: hsl(var(--accent));
+            color: hsl(var(--accent-foreground));
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-background">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <div class="container flex h-14 max-w-screen-2xl items-center">
+            <div class="mr-4 hidden md:flex">
+                <a class="mr-6 flex items-center space-x-2" href="/">
+                    <div class="h-6 w-6 rounded-md bg-primary flex items-center justify-center">
+                        <img src="assets/esperia_studio_logo.jpg" alt="Description of image" />
+                    </div>
+                    <span class="hidden font-semibold sm:inline-block text-pink-500">Esperia Design Library</span>
+                </a>
+                <nav class="flex items-center space-x-6 text-sm font-medium">
+                    <a class="transition-colors hover:text-foreground/80 text-foreground" href="#docs">Documentation</a>
+                    <a class="transition-colors hover:text-foreground/80 text-muted-foreground" href="#components">Components</a>
+                    <a class="transition-colors hover:text-foreground/80 text-muted-foreground" href="#examples">Examples</a>
+                </nav>
+            </div>
+            <div class="flex flex-1 items-center justify-between space-x-2 md:justify-end">
+                <div class="w-full flex-1 md:w-auto md:flex-none">
+                    <button class="inline-flex items-center whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input hover:bg-accent hover:text-accent-foreground px-4 py-2 relative h-8 w-full justify-start rounded-[0.5rem] bg-background text-sm font-normal text-muted-foreground shadow-none sm:pr-12 md:w-40 lg:w-64">
+                        <i class="fas fa-search mr-2 h-4 w-4"></i>
+                        <span class="hidden lg:inline-flex">Search icons...</span>
+                        <span class="inline-flex lg:hidden">Search...</span>
+                        <kbd class="pointer-events-none absolute right-[0.3rem] top-[0.3rem] hidden h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium opacity-100 sm:flex">
+                            <span class="text-xs">⌘</span>K
+                        </kbd>
+                    </button>
+                </div>
+                <nav class="flex items-center">
+                    <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-8 w-8">
+                        <i class="fab fa-github h-4 w-4"></i>
+                        <span class="sr-only">GitHub</span>
+                    </button>
+                    <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-8 w-8">
+                        <i class="fas fa-sun h-4 w-4"></i>
+                        <span class="sr-only">Toggle theme</span>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="container max-w-screen-2xl mx-auto p-4 md:p-6 lg:p-8">
+        <!-- Hero Section -->
+        <div class="flex flex-col items-start gap-2 px-4 py-6 md:py-10">
+            <div class="flex items-center space-x-2">
+                <span class="badge badge-pws">PWS v2.1</span>
+                <span class="badge badge-mws">MWS v1.8</span>
+            </div>
+            <h1 class="scroll-m-20 text-2xl font-semibold tracking-tight lg:text-2xl">
+                Icon Library
+            </h1>
+            <p class="text-xl text-muted-foreground max-w-[750px]">
+                Comprehensive iconography following PWS and MWS. 
+                Copy and paste icons into your apps.
+            </p>
+            <div class="flex items-center space-x-4 pt-4">
+                <button class="btn-primary inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-9 px-4 py-2">
+                    <i class="fas fa-download mr-2 h-4 w-4"></i>
+                    Download Library
+                </button>
+                <button class="btn-secondary inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-9 px-4 py-2">
+                    <i class="fas fa-code mr-2 h-4 w-4"></i>
+                    View on GitHub
+                </button>
+            </div>
+        </div>
+
+        <!-- Stats Cards -->
+        <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4 mb-8">
+            <div class="card rounded-lg border shadow-sm p-6">
+                <div class="flex flex-row items-center justify-between space-y-0 pb-2">
+                    <h3 class="tracking-tight text-sm font-medium">PWS Icons</h3>
+                    <i class="fas fa-mobile-alt h-4 w-4 text-muted-foreground"></i>
+                </div>
+                <div>
+                    <div class="text-2xl font-bold">847</div>
+                    <p class="text-xs text-muted-foreground">Presto Workspace</p>
+                </div>
+            </div>
+            <div class="card rounded-lg border shadow-sm p-6">
+                <div class="flex flex-row items-center justify-between space-y-0 pb-2">
+                    <h3 class="tracking-tight text-sm font-medium">MWS Icons</h3>
+                    <i class="fas fa-globe h-4 w-4 text-muted-foreground"></i>
+                </div>
+                <div>
+                    <div class="text-2xl font-bold">623</div>
+                    <p class="text-xs text-muted-foreground">Modern Web Standards</p>
+                </div>
+            </div>
+            <div class="card rounded-lg border shadow-sm p-6">
+                <div class="flex flex-row items-center justify-between space-y-0 pb-2">
+                    <h3 class="tracking-tight text-sm font-medium">Categories</h3>
+                    <i class="fas fa-layer-group h-4 w-4 text-muted-foreground"></i>
+                </div>
+                <div>
+                    <div class="text-2xl font-bold">24</div>
+                    <p class="text-xs text-muted-foreground">Organized collections</p>
+                </div>
+            </div>
+            <div class="card rounded-lg border shadow-sm p-6">
+                <div class="flex flex-row items-center justify-between space-y-0 pb-2">
+                    <h3 class="tracking-tight text-sm font-medium">Downloads</h3>
+                    <i class="fas fa-download h-4 w-4 text-muted-foreground"></i>
+                </div>
+                <div>
+                    <div class="text-2xl font-bold">127K</div>
+                    <p class="text-xs text-muted-foreground">This month</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filters -->
+        <div class="card rounded-lg border shadow-sm mb-8">
+            <div class="p-6">
+                <div class="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4">
+                    <div class="flex-1">
+                        <div class="relative">
+                            <i class="fas fa-search absolute left-2 top-2.5 h-4 w-4 text-muted-foreground"></i>
+                            <input placeholder="Search icons..." class="flex h-9 w-full rounded-md border border-input bg-transparent px-8 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50" />
+                        </div>
+                    </div>
+                    <select class="flex h-9 w-full md:w-[180px] items-center justify-between whitespace-nowrap rounded-md border border-input bg-transparent px-3 py-2 text-sm shadow-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-ring disabled:cursor-not-allowed disabled:opacity-50">
+                        <option>All Standards</option>
+                        <option>PWS Icons</option>
+                        <option>MWS Icons</option>
+                        <option>Shared Icons</option>
+                    </select>
+                    <select class="flex h-9 w-full md:w-[180px] items-center justify-between whitespace-nowrap rounded-md border border-input bg-transparent px-3 py-2 text-sm shadow-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-ring disabled:cursor-not-allowed disabled:opacity-50">
+                        <option>All Categories</option>
+                        <option>Navigation</option>
+                        <option>Actions</option>
+                        <option>Status</option>
+                        <option>Media</option>
+                        <option>Forms</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- PWS Icons Section -->
+        <div class="space-y-8">
+            <div class="card rounded-lg border shadow-sm">
+                <div class="p-6 pb-4">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-2">
+                            <h2 class="text-lg font-semibold">PWS Navigation</h2>
+                            <span class="badge badge-pws">PWS</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-8 w-8">
+                                <i class="fas fa-th-large h-4 w-4"></i>
+                            </button>
+                            <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-8 w-8">
+                                <i class="fas fa-list h-4 w-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="text-sm text-muted-foreground mt-1">PWS icons optimized for mobile interfaces</p>
+                </div>
+                <div class="px-6 pb-6">
+                    <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-4">
+                        <!-- PWS Icons -->
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <i class="fas fa-home h-6 w-6 mb-2 text-blue-600"></i>
+                            <span class="text-xs text-center font-mono">pws-home</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <i class="fas fa-bars h-6 w-6 mb-2 text-blue-600"></i>
+                            <span class="text-xs text-center font-mono">pws-menu</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <i class="fas fa-arrow-left h-6 w-6 mb-2 text-blue-600"></i>
+                            <span class="text-xs text-center font-mono">pws-back</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <i class="fas fa-search h-6 w-6 mb-2 text-blue-600"></i>
+                            <span class="text-xs text-center font-mono">pws-search</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <i class="fas fa-bell h-6 w-6 mb-2 text-blue-600"></i>
+                            <span class="text-xs text-center font-mono">pws-notify</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <i class="fas fa-user h-6 w-6 mb-2 text-blue-600"></i>
+                            <span class="text-xs text-center font-mono">pws-profile</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <i class="fas fa-cog h-6 w-6 mb-2 text-blue-600"></i>
+                            <span class="text-xs text-center font-mono">pws-settings</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <i class="fas fa-compass h-6 w-6 mb-2 text-blue-600"></i>
+                            <span class="text-xs text-center font-mono">pws-explore</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MWS Icons Section -->
+            <div class="card rounded-lg border shadow-sm">
+                <div class="p-6 pb-4">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-2">
+                            <h2 class="text-lg font-semibold">MWS Actions</h2>
+                            <span class="badge badge-mws">MWS</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-8 w-8">
+                                <i class="fas fa-th-large h-4 w-4"></i>
+                            </button>
+                            <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-8 w-8">
+                                <i class="fas fa-list h-4 w-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="text-sm text-muted-foreground mt-1">MWS action icons for contemporary applications</p>
+                </div>
+                <div class="px-6 pb-6">
+                    <div id="iconGrid" class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-4">
+                        <!-- MWS Icons -->
+                        <!-- <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/aftermarketIcon.svg" alt="aftermarketIcon" />
+                            <span class="text-xs text-center font-mono">aftermarket</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/AskManiAi.svg" alt="aftermarketIcon" class="w-8" />
+                            <span class="text-xs text-center font-mono">askMani</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/ChevronLeft.svg" alt="aftermarketIcon" class="" />
+                            <span class="text-xs text-center font-mono">chevronleft</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/Clear_icon.svg" alt="CancelIcon" class="" />
+                            <span class="text-xs text-center font-mono">clearIcon</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/Close2.svg" alt="aftermarketIcon" class="" />
+                            <span class="text-xs text-center font-mono">close</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/Close_red.svg" alt="aftermarketIcon" class="" />
+                            <span class="text-xs text-center font-mono">Close-red</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/CompareIcon.svg" alt="CompareIcon" class="" />
+                            <span class="text-xs text-center font-mono">PN compare</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/ConstructiongridIcon.svg" alt="aftermarketIcon" class="" />
+                            <span class="text-xs text-center font-mono">Construction-tab</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/Cube.svg" alt="aftermarketIcon" class="" />
+                            <span class="text-xs text-center font-mono">Cube</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/documentationIcon.svg" alt="aftermarketIcon" class="" />
+                            <span class="text-xs text-center font-mono">DoubleArrowDownIcon</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/EBOM.svg" alt="aftermarketIcon" class="" />
+                            <span class="text-xs text-center font-mono">EBOM</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/Error.svg" alt="aftermarketIcon" class="" />
+                            <span class="text-xs text-center font-mono">Exclamation</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/Error_red.svg" alt="aftermarketIcon" class="" />
+                            <span class="text-xs text-center font-mono">Error</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/ExportSpares.png" alt="aftermarketIcon" class="" />
+                            <span class="text-xs text-center font-mono">ExportSparespng</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/ExpandIcons.svg" alt="aftermarketIcon" class="w-6" />
+                            <span class="text-xs text-center font-mono">Serial Card Expand</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/ExistingWorkspace.svg" alt="aftermarketIcon" class="w-6" />
+                            <span class="text-xs text-center font-mono">Existing Workspace</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/Filter.svg" alt="aftermarketIcon" class="w-6" />
+                            <span class="text-xs text-center font-mono">Filter</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/graph-file.svg" alt="aftermarketIcon" class="w-6" />
+                            <span class="text-xs text-center font-mono">graph-file</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/Hexagon2.svg" alt="aftermarketIcon" class="w-6" />
+                            <span class="text-xs text-center font-mono">Download</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/NewWorkspace.svg" alt="aftermarketIcon" class="w-6" />
+                            <span class="text-xs text-center font-mono">New Workspace</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/RepairBOMIcon.svg" alt="aftermarketIcon" class="w-6" />
+                            <span class="text-xs text-center font-mono">RepairBOM</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/TimelineIcon.png" alt="aftermarketIcon" class="w-6" />
+                            <span class="text-xs text-center font-mono">TimeLineTab</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/tool.svg" alt="aftermarketIcon" class="w-6" />
+                            <span class="text-xs text-center font-mono">Recommended Spares Icon</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/valveLink.svg" alt="aftermarketIcon" class="w-6" />
+                            <span class="text-xs text-center font-mono">valveLink</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/add.svg" alt="aftermarketIcon" class="w-6" />
+                            <span class="text-xs text-center font-mono">Add</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/addlayer.svg" alt="aftermarketIcon" class="w-6" />
+                            <span class="text-xs text-center font-mono">Add Parts</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/attributeIcon.svg" alt="aftermarketIcon" class="w-6" />
+                            <span class="text-xs text-center font-mono">attribute Icon</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/bar-chart.svg" alt="aftermarketIcon" class="w-6" />
+                            <span class="text-xs text-center font-mono">bar-chart</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/bc_separators.svg" alt="aftermarketIcon" class="w-1" />
+                            <span class="text-xs text-center font-mono">Breadcrumb Separator</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/brush1.svg" alt="aftermarketIcon" class="w-5" />
+                            <span class="text-xs text-center font-mono">Drawings</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/breadcrumb_home.svg" alt="aftermarketIcon" class="w-4" />
+                            <span class="text-xs text-center font-mono">Breadcrumb Home</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/calendar.svg" alt="aftermarketIcon" class="" />
+                            <span class="text-xs text-center font-mono">calendar</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/chevron-down.svg" alt="aftermarketIcon" class="" />
+                            <span class="text-xs text-center font-mono">chevron-down</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/CompareIcon.svg" alt="aftermarketIcon" class="" />
+                            <span class="text-xs text-center font-mono">compare</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/launch1.svg" alt="aftermarketIcon" class="" />
+                            <span class="text-xs text-center font-mono">component Tag</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Shared Icons Section -->
+            <div class="card rounded-lg border shadow-sm">
+                <div class="p-6 pb-4">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-2">
+                            <h2 class="text-lg font-semibold">Shared Standards</h2>
+                            <span class="badge badge-shared">SHARED</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-8 w-8">
+                                <i class="fas fa-th-large h-4 w-4"></i>
+                            </button>
+                            <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-8 w-8">
+                                <i class="fas fa-list h-4 w-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="text-sm text-muted-foreground mt-1">Universal icons compatible with both PWS and MWS standards</p>
+                </div>
+                <div class="px-6 pb-6">
+                    <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-4">
+                        <!-- Shared Icons -->
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <i class="fas fa-info-circle h-6 w-6 mb-2 text-purple-600"></i>
+                            <span class="text-xs text-center font-mono">info</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <i class="fas fa-heart h-6 w-6 mb-2 text-purple-600"></i>
+                            <span class="text-xs text-center font-mono">favorite</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <i class="fas fa-star h-6 w-6 mb-2 text-purple-600"></i>
+                            <span class="text-xs text-center font-mono">star</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <i class="fas fa-bookmark h-6 w-6 mb-2 text-purple-600"></i>
+                            <span class="text-xs text-center font-mono">bookmark</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <i class="fas fa-calendar h-6 w-6 mb-2 text-purple-600"></i>
+                            <span class="text-xs text-center font-mono">calendar</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <i class="fas fa-clock h-6 w-6 mb-2 text-purple-600"></i>
+                            <span class="text-xs text-center font-mono">time</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Installation Guide -->
+        <div class="mt-12 card rounded-lg border shadow-sm">
+            <div class="p-6">
+                <h2 class="text-lg font-semibold mb-4">Installation</h2>
+                <div class="space-y-4">
+                    <div>
+                        <h3 class="text-sm font-medium mb-2">Install via npm</h3>
+                        <div class="relative">
+                            <pre class="bg-muted rounded-md p-4 text-sm overflow-x-auto"><code>npm install @pws-mws/icons</code></pre>
+                            <button class="btn-ghost absolute top-2 right-2 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                <i class="fas fa-copy h-3 w-3"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-medium mb-2">Import in your project</h3>
+                        <div class="relative">
+                            <pre class="bg-muted rounded-md p-4 text-sm overflow-x-auto"><code>import { PwsHome, MwsAdd } from '@pws-mws/icons'</code></pre>
+                            <button class="btn-ghost absolute top-2 right-2 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                <i class="fas fa-copy h-3 w-3"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="border-t border-border mt-16">
+        <div class="container max-w-screen-2xl mx-auto p-4 md:p-6 lg:p-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="space-y-3">
+                    <h3 class="text-sm font-semibold">PWS & MWS Icons</h3>
+                    <p class="text-sm text-muted-foreground">
+                        Comprehensive iconography library following modern web standards.
+                    </p>
+                </div>
+                <div class="space-y-3">
+                    <h3 class="text-sm font-semibold">Documentation</h3>
+                    <ul class="space-y-2 text-sm text-muted-foreground">
+                        <li><a href="#" class="hover:text-foreground transition-colors">Getting Started</a></li>
+                        <li><a href="#" class="hover:text-foreground transition-colors">Components</a></li>
+                        <li><a href="#" class="hover:text-foreground transition-colors">Examples</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-3">
+                    <h3 class="text-sm font-semibold">Resources</h3>
+                    <ul class="space-y-2 text-sm text-muted-foreground">
+                        <li><a href="#" class="hover:text-foreground transition-colors">GitHub</a></li>
+                        <li><a href="#" class="hover:text-foreground transition-colors">Figma Kit</a></li>
+                        <li><a href="#" class="hover:text-foreground transition-colors">Changelog</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-3">
+                    <h3 class="text-sm font-semibold">Community</h3>
+                    <ul class="space-y-2 text-sm text-muted-foreground">
+                        <li><a href="#" class="hover:text-foreground transition-colors">Discord</a></li>
+                        <li><a href="#" class="hover:text-foreground transition-colors">Twitter</a></li>
+                        <li><a href="#" class="hover:text-foreground transition-colors">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-border text-center text-sm text-muted-foreground">
+                <p>Built by Esperia Studio. The source code is available on GitHub.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
