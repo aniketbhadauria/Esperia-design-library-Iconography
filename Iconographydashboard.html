@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esperia Design Library-Iconography</title>
+    <title>Esperia Design Library</title>
+    <link href="icons.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="icons.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/primeicons@6.0.1/primeicons.css">
     
-    <script>
+    <!-- <script>
         tailwind.config = {
             theme: {
                 extend: {
@@ -55,120 +57,8 @@
                 }
             }
         }
-    </script>
-    <style>
-        :root {
-            --background: 0 0% 100%;
-            --foreground: 222.2 84% 4.9%;
-            --card: 0 0% 100%;
-            --card-foreground: 222.2 84% 4.9%;
-            --popover: 0 0% 100%;
-            --popover-foreground: 222.2 84% 4.9%;
-            --primary: 222.2 47.4% 11.2%;
-            --primary-foreground: 210 40% 98%;
-            --secondary: 210 40% 96%;
-            --secondary-foreground: 222.2 84% 4.9%;
-            --muted: 210 40% 96%;
-            --muted-foreground: 215.4 16.3% 46.9%;
-            --accent: 210 40% 96%;
-            --accent-foreground: 222.2 84% 4.9%;
-            --destructive: 0 84.2% 60.2%;
-            --destructive-foreground: 210 40% 98%;
-            --border: 214.3 31.8% 91.4%;
-            --input: 214.3 31.8% 91.4%;
-            --ring: 222.2 84% 4.9%;
-            --radius: 0.5rem;
-        }
-
-        * {
-            border-color: hsl(var(--border));
-        }
-
-        body {
-            background-color: hsl(var(--background));
-            color: hsl(var(--foreground));
-        }
-
-        .card {
-            background-color: hsl(var(--card));
-            color: hsl(var(--card-foreground));
-        }
-
-        .btn-primary {
-            background-color: hsl(var(--primary));
-            color: hsl(var(--primary-foreground));
-        }
-
-        .btn-secondary {
-            background-color: hsl(var(--secondary));
-            color: hsl(var(--secondary-foreground));
-        }
-
-        .text-muted {
-            color: hsl(var(--muted-foreground));
-        }
-
-        .bg-muted {
-            background-color: hsl(var(--muted));
-        }
-
-        .border-input {
-            border-color: hsl(var(--input));
-        }
-
-        .focus-ring {
-            --tw-ring-color: hsl(var(--ring));
-        }
-
-        .icon-card {
-            transition: all 0.2s ease-in-out;
-        }
-
-        .icon-card:hover {
-            transform: translateY(-1px);
-        }
-
-        .badge {
-            display: inline-flex;
-            align-items: center;
-            border-radius: calc(var(--radius) - 2px);
-            padding: 0.25rem 0.5rem;
-            font-size: 0.75rem;
-            font-weight: 500;
-            line-height: 1;
-        }
-
-        .badge-pws {
-            background-color: hsl(221.2 83.2% 53.3%);
-            color: hsl(210 40% 98%);
-        }
-
-        .badge-mws {
-            background-color: hsl(142.1 76.2% 36.3%);
-            color: hsl(210 40% 98%);
-        }
-
-        .badge-shared {
-            background: linear-gradient(45deg, hsl(221.2 83.2% 53.3%), hsl(142.1 76.2% 36.3%));
-            color: hsl(210 40% 98%);
-        }
-
-        .badge-outline {
-            background-color: transparent;
-            border: 1px solid hsl(var(--border));
-            color: hsl(var(--foreground));
-        }
-
-        .btn-ghost {
-            background-color: transparent;
-            color: hsl(var(--foreground));
-        }
-
-        .btn-ghost:hover {
-            background-color: hsl(var(--accent));
-            color: hsl(var(--accent-foreground));
-        }
-    </style>
+    </script> -->
+   
 </head>
 <body class="min-h-screen bg-background">
     <!-- Header -->
@@ -246,7 +136,7 @@
                     <i class="fas fa-mobile-alt h-4 w-4 text-muted-foreground"></i>
                 </div>
                 <div>
-                    <div class="text-2xl font-bold">847</div>
+                    <div class="text-2xl font-bold">47</div>
                     <p class="text-xs text-muted-foreground">Presto Workspace</p>
                 </div>
             </div>
@@ -256,8 +146,8 @@
                     <i class="fas fa-globe h-4 w-4 text-muted-foreground"></i>
                 </div>
                 <div>
-                    <div class="text-2xl font-bold">623</div>
-                    <p class="text-xs text-muted-foreground">Modern Web Standards</p>
+                    <div class="text-2xl font-bold">50</div>
+                    <p class="text-xs text-muted-foreground">Icons</p>
                 </div>
             </div>
             <div class="card rounded-lg border shadow-sm p-6">
@@ -283,7 +173,7 @@
         </div>
 
         <!-- Filters -->
-        <div class="card rounded-lg border shadow-sm mb-8">
+        <div class="card rounded-lg border shadow-sm p-6">
             <div class="p-6">
                 <div class="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4">
                     <div class="flex-1">
@@ -312,7 +202,7 @@
 
         <!-- PWS Icons Section -->
         <div class="space-y-8">
-            <div class="card rounded-lg border shadow-sm">
+            <div class="card rounded-lg border shadow-sm p-6">
                 <div class="p-6 pb-4">
                     <div class="flex items-center justify-between">
                         <div class="flex items-center space-x-2">
@@ -331,11 +221,11 @@
                     <p class="text-sm text-muted-foreground mt-1">PWS icons optimized for mobile interfaces</p>
                 </div>
                 <div class="px-6 pb-6">
-                    <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-4">
+                    <div id="PWSiconGrid" class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-4">
                         <!-- PWS Icons -->
-                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
-                            <i class="fas fa-home h-6 w-6 mb-2 text-blue-600"></i>
-                            <span class="text-xs text-center font-mono">pws-home</span>
+                        <!-- <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/my-workspace-icon.svg" alt="CancelIcon" class="h-6 w-6 mb-2" />
+                            <span class="text-xs text-center font-mono">my-workspace</span>
                             <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
                                 <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
                                     <i class="fas fa-copy h-3 w-3"></i>
@@ -344,8 +234,8 @@
                         </div>
                         
                         <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
-                            <i class="fas fa-bars h-6 w-6 mb-2 text-blue-600"></i>
-                            <span class="text-xs text-center font-mono">pws-menu</span>
+                            <img src="assets/search.svg" alt="CancelIcon" class="h-6 w-6 mb-2" />
+                            <span class="text-xs text-center font-mono">search</span>
                             <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
                                 <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
                                     <i class="fas fa-copy h-3 w-3"></i>
@@ -354,8 +244,8 @@
                         </div>
                         
                         <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
-                            <i class="fas fa-arrow-left h-6 w-6 mb-2 text-blue-600"></i>
-                            <span class="text-xs text-center font-mono">pws-back</span>
+                            <img src="assets/expanderIcon.svg" alt="CancelIcon" class="h-6 w-6 mb-2" />
+                            <span class="text-xs text-center font-mono">dropdown-select-all</span>
                             <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
                                 <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
                                     <i class="fas fa-copy h-3 w-3"></i>
@@ -363,61 +253,550 @@
                             </div>
                         </div>
                         
-                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
-                            <i class="fas fa-search h-6 w-6 mb-2 text-blue-600"></i>
-                            <span class="text-xs text-center font-mono">pws-search</span>
+                        <div  class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/expanderIcon.svg" alt="CancelIcon" class="h-6 w-6 mb-2" />
+                            <span class="text-xs text-center font-mono">folder-open</span>
                             <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
                                 <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
                                     <i class="fas fa-copy h-3 w-3"></i>
                                 </button>
                             </div>
                         </div>
-                        
-                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
-                            <i class="fas fa-bell h-6 w-6 mb-2 text-blue-600"></i>
-                            <span class="text-xs text-center font-mono">pws-notify</span>
+                        <div  class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/folderIcon.svg" alt="CancelIcon" class="h-6 w-6 mb-2" />
+                            <span class="text-xs text-center font-mono">folder-close</span>
                             <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
                                 <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
                                     <i class="fas fa-copy h-3 w-3"></i>
                                 </button>
                             </div>
                         </div>
-                        
-                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
-                            <i class="fas fa-user h-6 w-6 mb-2 text-blue-600"></i>
-                            <span class="text-xs text-center font-mono">pws-profile</span>
+                        <div  class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/green-tag.svg" alt="CancelIcon" class="h-6 w-6 mb-2" />
+                            <span class="text-xs text-center font-mono">tag</span>
                             <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
                                 <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
                                     <i class="fas fa-copy h-3 w-3"></i>
                                 </button>
                             </div>
                         </div>
-
-                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
-                            <i class="fas fa-cog h-6 w-6 mb-2 text-blue-600"></i>
-                            <span class="text-xs text-center font-mono">pws-settings</span>
+                        <div  class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/primary-icon.png" alt="CancelIcon" class="h-6 w-6 mb-2" />
+                            <span class="text-xs text-center font-mono">primary</span>
                             <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
                                 <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
                                     <i class="fas fa-copy h-3 w-3"></i>
                                 </button>
                             </div>
                         </div>
-
-                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
-                            <i class="fas fa-compass h-6 w-6 mb-2 text-blue-600"></i>
-                            <span class="text-xs text-center font-mono">pws-explore</span>
+                        <div  class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/alternate-icon.png" alt="CancelIcon" class="h-6 w-6 mb-2" />
+                            <span class="text-xs text-center font-mono">alternate</span>
                             <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
                                 <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
                                     <i class="fas fa-copy h-3 w-3"></i>
                                 </button>
                             </div>
                         </div>
+                        <div  class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/benchmark-icon.png" alt="CancelIcon" class="h-6 w-6 mb-2" />
+                            <span class="text-xs text-center font-mono">benchmark</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div  class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/whitetagIcon.svg" alt="CancelIcon" class="h-6 w-6 mb-2" />
+                            <span class="text-xs text-center font-mono">part</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div  class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/qty_tag.svg" alt="CancelIcon" class="h-6 w-6 mb-2" />
+                            <span class="text-xs text-center font-mono">quantity</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div  class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/edit_content.svg" alt="CancelIcon" class="h-6 w-6 mb-2" />
+                            <span class="text-xs text-center font-mono">quote-summary</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div  class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/file.svg" alt="CancelIcon" class="h-6 w-6 mb-2" />
+                            <span class="text-xs text-center font-mono">fisher-isa-specsheet</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div  class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/grid.svg" alt="CancelIcon" class="h-6 w-6 mb-2" />
+                            <span class="text-xs text-center font-mono">valve-actuator-report</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div  class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/graph.svg" alt="CancelIcon" class="h-6 w-6 mb-2" />
+                            <span class="text-xs text-center font-mono">flow-coefficient</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div  class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/valve.svg" alt="CancelIcon" class="h-6 w-6 mb-2" />
+                            <span class="text-xs text-center font-mono">delivery-doc</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div  class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/spares2.svg" alt="CancelIcon" class="h-6 w-6 mb-2" />
+                            <span class="text-xs text-center font-mono">recommended-spare</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/drawings.svg" alt="CancelIcon" class="h-6 w-6 mb-2" />
+                            <span class="text-xs text-center font-mono">drawings</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/Info Fill.svg" alt="CancelIcon" class="h-6 w-6 mb-2" />
+                            <span class="text-xs text-center font-mono">info-icon</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/Info Fill.svg" alt="CancelIcon" class="" />
+                            <span class="text-xs text-center font-mono">info-icon</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="btn-ghost inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-6 w-6">
+                                    <i class="fas fa-copy h-3 w-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/transferprogress.svg" alt="transfer-loading" class="h-6 w-6 mb-2" />
+                            <span class="text-xs text-center font-mono">transfer-loading</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                              <button class="btn-ghost"><i class="fas fa-copy h-3 w-3"></i></button>
+                            </div>
+                          </div>
+                          <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="/assets/ban.svg" alt="item-incomplete" class="h-6 w-6 mb-2" />
+                            <span class="text-xs text-center font-mono">item-incomplete</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                              <button class="btn-ghost"><i class="fas fa-copy h-3 w-3"></i></button>
+                            </div>
+                          </div>
+                          <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/browserSetting.svg" alt="process-condition" class="h-6 w-6 mb-2" />
+                            <span class="text-xs text-center font-mono">process-condition</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                              <button class="btn-ghost"><i class="fas fa-copy h-3 w-3"></i></button>
+                            </div>
+                          </div>
+                          <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/layerTab.svg" alt="build-assembly" class="h-6 w-6 mb-2" />
+                            <span class="text-xs text-center font-mono">build-assembly</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                              <button class="btn-ghost"><i class="fas fa-copy h-3 w-3"></i></button>
+                            </div>
+                          </div>
+                          <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/valves.svg" alt="size-valve" class="h-6 w-6 mb-2" />
+                            <span class="text-xs text-center font-mono">size-valve</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                              <button class="btn-ghost"><i class="fas fa-copy h-3 w-3"></i></button>
+                            </div>
+                          </div>
+                          
+                          <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                           <img src="assets/actuator.svg" alt="size-actuator" class="h-6 w-6 mb-2" />
+                          <span class="text-xs text-center font-mono">size-actuator</span>
+                          <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                           <button class="btn-ghost"><i class="fas fa-copy h-3 w-3"></i></button>
+                           </div>
+                         </div>
+                         <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/RedWarning.svg" alt="warning" class="h-6 w-6 mb-2" />
+                            <span class="text-xs text-center font-mono">warning</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                              <button class="btn-ghost"><i class="fas fa-copy h-3 w-3"></i></button>
+                            </div>
+                          </div>
+                          
+                          <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/scroll-top.svg" alt="back-to-top" class="h-6 w-6 mb-2" />
+                            <span class="text-xs text-center font-mono">back-to-top</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                              <button class="btn-ghost"><i class="fas fa-copy h-3 w-3"></i></button>
+                            </div>
+                          </div>
+                          
+                          <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/sizingOption.svg" alt="sizing-options" class="h-6 w-6 mb-2" />
+                            <span class="text-xs text-center font-mono">sizing-options</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                              <button class="btn-ghost"><i class="fas fa-copy h-3 w-3"></i></button>
+                            </div>
+                          </div>
+                          
+                          <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/sizingInput.svg" alt="sizing-inputs" class="h-6 w-6 mb-2" />
+                            <span class="text-xs text-center font-mono">sizing-inputs</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                              <button class="btn-ghost"><i class="fas fa-copy h-3 w-3"></i></button>
+                            </div>
+                          </div>
+                          
+                          <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/sizingOutput.svg" alt="sizing-outputs" class="h-6 w-6 mb-2" />
+                            <span class="text-xs text-center font-mono">sizing-outputs</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                              <button class="btn-ghost"><i class="fas fa-copy h-3 w-3"></i></button>
+                            </div>
+                          </div>
+                          
+                          <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/fisherValve.svg" alt="fisher-valve" class="h-6 w-6 mb-2" />
+                            <span class="text-xs text-center font-mono">fisher-valve</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                              <button class="btn-ghost"><i class="fas fa-copy h-3 w-3"></i></button>
+                            </div>
+                          </div>
+                          
+                          <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/flowTab.svg" alt="flow-tab" class="h-6 w-6 mb-2" />
+                            <span class="text-xs text-center font-mono">flow-tab</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                              <button class="btn-ghost"><i class="fas fa-copy h-3 w-3"></i></button>
+                            </div>
+                          </div>
+                          
+                          <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="/assets/tooltip-info-icon.svg" alt="tooltip-info" class="h-6 w-6 mb-2" />
+                            <span class="text-xs text-center font-mono">tooltip-info</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                              <button class="btn-ghost"><i class="fas fa-copy h-3 w-3"></i></button>
+                            </div>
+                          </div>
+                          
+                          <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <img src="assets/warning-triangle.svg" alt="warning-triangle" class="h-6 w-6 mb-2" />
+                            <span class="text-xs text-center font-mono">warning-triangle</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                              <button class="btn-ghost"><i class="fas fa-copy h-3 w-3"></i></button>
+                            </div>
+                          </div>
+                          <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <i class="fas fa-plus h-6 w-6 mb-2 text-blue-600"></i>
+                            <span class="text-xs text-center font-mono">create-project</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                              <button class="btn-ghost"><i class="fas fa-copy h-3 w-3"></i></button>
+                            </div>
+                          </div>
+                          
+                          <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <i class="fas fa-copy h-6 w-6 mb-2 text-blue-600"></i>
+                            <span class="text-xs text-center font-mono">copy-workspace</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                              <button class="btn-ghost"><i class="fas fa-copy h-3 w-3"></i></button>
+                            </div>
+                          </div>
+                          
+                          <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <i class="fas fa-trash-can h-6 w-6 mb-2 text-blue-600"></i>
+                            <span class="text-xs text-center font-mono">delete-workspace</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                              <button class="btn-ghost"><i class="fas fa-copy h-3 w-3"></i></button>
+                            </div>
+                          </div>
+                          
+                          <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <i class="fas fa-file-lines h-6 w-6 mb-2 text-blue-600"></i>
+                            <span class="text-xs text-center font-mono">documents-drawings</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                              <button class="btn-ghost"><i class="fas fa-copy h-3 w-3"></i></button>
+                            </div>
+                          </div>
+                          
+                          <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <i class="fas fa-dollar-sign h-6 w-6 mb-2 text-blue-600"></i>
+                            <span class="text-xs text-center font-mono">pricing-discount</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                              <button class="btn-ghost"><i class="fas fa-copy h-3 w-3"></i></button>
+                            </div>
+                          </div>
+                          
+                          <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <i class="fa-regular fa-pen-to-square h-6 w-6 mb-2 text-blue-600"></i>
+                            <span class="text-xs text-center font-mono">mass-edit</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                              <button class="btn-ghost"><i class="fas fa-copy h-3 w-3"></i></button>
+                            </div>
+                          </div>
+                          <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <i class="fa-solid fa-arrow-right-long h-6 w-6 mb-2 text-blue-600"></i>
+                            <span class="text-xs text-center font-mono">transfer-ff2</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                              <button class="btn-ghost"><i class="fas fa-copy h-3 w-3"></i></button>
+                            </div>
+                          </div>
+                          
+                          <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <i class="fa-solid fa-chevron-left h-6 w-6 mb-2 text-blue-600"></i>
+                            <span class="text-xs text-center font-mono">collapse-tree</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                              <button class="btn-ghost"><i class="fas fa-copy h-3 w-3"></i></button>
+                            </div>
+                          </div>
+                          
+                          <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <i class="fas fa-chevron-left h-6 w-6 mb-2 text-blue-600"></i>
+                            <span class="text-xs text-center font-mono">summary-left</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                              <button class="btn-ghost"><i class="fas fa-copy h-3 w-3"></i></button>
+                            </div>
+                          </div>
+                          
+                          <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <i class="fas fa-chevron-right h-6 w-6 mb-2 text-blue-600"></i>
+                            <span class="text-xs text-center font-mono">summary-right</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                              <button class="btn-ghost"><i class="fas fa-copy h-3 w-3"></i></button>
+                            </div>
+                          </div>
+                          
+                          <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <i class="fa-solid fa-times h-6 w-6 mb-2 text-blue-600"></i>
+                            <span class="text-xs text-center font-mono">pill-close</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                              <button class="btn-ghost"><i class="fas fa-copy h-3 w-3"></i></button>
+                            </div>
+                          </div>
+                          
+                          <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <i class="fa-solid fa-floppy-disk h-6 w-6 mb-2 text-blue-600"></i>
+                            <span class="text-xs text-center font-mono">specsheet-save</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                              <button class="btn-ghost"><i class="fas fa-copy h-3 w-3"></i></button>
+                            </div>
+                          </div>
+                          
+                          <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <i class="fa-solid fa-border-all h-6 w-6 mb-2 text-blue-600"></i>
+                            <span class="text-xs text-center font-mono">item-price-breakdown</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                              <button class="btn-ghost"><i class="fas fa-copy h-3 w-3"></i></button>
+                            </div>
+                          </div>
+                          
+                          <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <i class="fa-regular fa-file-lines h-6 w-6 mb-2 text-blue-600"></i>
+                            <span class="text-xs text-center font-mono">discount-matrix</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                              <button class="btn-ghost"><i class="fas fa-copy h-3 w-3"></i></button>
+                            </div>
+                          </div>
+                          
+                          <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <i class="fa-regular fa-square-plus h-6 w-6 mb-2 text-blue-600"></i>
+                            <span class="text-xs text-center font-mono">itemized-pricing</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                              <button class="btn-ghost"><i class="fas fa-copy h-3 w-3"></i></button>
+                            </div>
+                          </div>
+                          <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <i class="fa-solid fa-chevron-down h-6 w-6 mb-2 text-blue-600"></i>
+                            <span class="text-xs text-center font-mono">arrow-down</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                              <button class="btn-ghost"><i class="fas fa-copy h-3 w-3"></i></button>
+                            </div>
+                          </div>
+                          
+                          <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <i class="fa-solid fa-chevron-up h-6 w-6 mb-2 text-blue-600"></i>
+                            <span class="text-xs text-center font-mono">arrow-up</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                              <button class="btn-ghost"><i class="fas fa-copy h-3 w-3"></i></button>
+                            </div>
+                          </div>
+                          
+                          <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <i class="fa-solid fa-upload h-6 w-6 mb-2 text-blue-600"></i>
+                            <span class="text-xs text-center font-mono">export-pricing</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                              <button class="btn-ghost"><i class="fas fa-copy h-3 w-3"></i></button>
+                            </div>
+                          </div>
+                          
+                          <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <i class="fa-solid fa-border-all h-6 w-6 mb-2 text-blue-600"></i>
+                            <span class="text-xs text-center font-mono">select-items-transfer</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                              <button class="btn-ghost"><i class="fas fa-copy h-3 w-3"></i></button>
+                            </div>
+                          </div>
+                          
+                          <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <i class="fa-solid fa-arrows-left-right h-6 w-6 mb-2 text-blue-600"></i>
+                            <span class="text-xs text-center font-mono">transfer-status</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                              <button class="btn-ghost"><i class="fas fa-copy h-3 w-3"></i></button>
+                            </div>
+                          </div>
+                          
+                          <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <i class="fas fa-check-circle fa-lg h-6 w-6 mb-2 text-green-600"></i>
+                            <span class="text-xs text-center font-mono">transfer-success</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                              <button class="btn-ghost"><i class="fas fa-copy h-3 w-3"></i></button>
+                            </div>
+                          </div>
+                          
+                          <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <i class="fas fa-triangle-exclamation fa-lg h-6 w-6 mb-2 text-yellow-500"></i>
+                            <span class="text-xs text-center font-mono">transfer-warning</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                              <button class="btn-ghost"><i class="fas fa-copy h-3 w-3"></i></button>
+                            </div>
+                          </div>
+                          
+                          <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <i class="fas fa-circle-xmark fa-lg h-6 w-6 mb-2 text-red-600"></i>
+                            <span class="text-xs text-center font-mono">transfer-failed</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                              <button class="btn-ghost"><i class="fas fa-copy h-3 w-3"></i></button>
+                            </div>
+                          </div>
+                          
+                          <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <i class="fa-solid fa-border-all h-6 w-6 mb-2 text-blue-600"></i>
+                            <span class="text-xs text-center font-mono">auto-select</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                              <button class="btn-ghost"><i class="fas fa-copy h-3 w-3"></i></button>
+                            </div>
+                          </div>
+                          
+                          <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <i class="fa-regular fa-envelope h-6 w-6 mb-2 text-yellow-600"></i>
+                            <span class="text-xs text-center font-mono">disqualified-solutions</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                              <button class="btn-ghost"><i class="fas fa-copy h-3 w-3"></i></button>
+                            </div>
+                          </div>
+                          
+                          <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <i class="fa-regular fa-envelope h-6 w-6 mb-2 text-yellow-600"></i>
+                            <span class="text-xs text-center font-mono">auto-warning</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                              <button class="btn-ghost"><i class="fas fa-copy h-3 w-3"></i></button>
+                            </div>
+                          </div>
+                          
+                          <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <i class="fa-solid fa-check-circle h-6 w-6 mb-2 text-green-600"></i>
+                            <span class="text-xs text-center font-mono">tile-check</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                              <button class="btn-ghost"><i class="fas fa-copy h-3 w-3"></i></button>
+                            </div>
+                          </div>
+                          
+                          <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <i class="fa-regular fa-circle-xmark h-6 w-6 mb-2 text-red-600"></i>
+                            <span class="text-xs text-center font-mono">tile-cross</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                              <button class="btn-ghost"><i class="fas fa-copy h-3 w-3"></i></button>
+                            </div>
+                          </div>
+                          
+                          <div class="icon-card group relative flex flex-col items-center justify-center rounded-md border border-border p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <i class="fa fa-eye h-6 w-6 mb-2 text-blue-600"></i>
+                            <span class="text-xs text-center font-mono">view-sizing</span>
+                            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                              <button class="btn-ghost"><i class="fas fa-copy h-3 w-3"></i></button>
+                            </div>
+                          </div> -->
+                          
+                          
+                          
+                       
+                          
+                          
+                          
+                    </div>
+                    <div class="text-end">
+                        <button href="#" class="button text-base" style="--clr: #7808d0">
+                            <span class="button__icon-wrapper">
+                              <svg
+                                viewBox="0 0 14 15"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="button__icon-svg"
+                                width="10"
+                              >
+                                <path
+                                  d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                                  fill="currentColor"
+                                ></path>
+                              </svg>
+                          
+                              <svg
+                                viewBox="0 0 14 15"
+                                fill="none"
+                                width="10"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="button__icon-svg button__icon-svg--copy"
+                              >
+                                <path
+                                  d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                                  fill="currentColor"
+                                ></path>
+                              </svg>
+                            </span>
+                           Show More
+                          </button>
+                      </div>
+                   
+                </div>
                     </div>
                 </div>
-            </div>
+            
 
             <!-- MWS Icons Section -->
-            <div class="card rounded-lg border shadow-sm">
+            <div class="card rounded-lg border shadow-sm mt-3.5">
                 <div class="p-6 pb-4">
                     <div class="flex items-center justify-between">
                         <div class="flex items-center space-x-2">
@@ -761,11 +1140,45 @@
                             </div>
                         </div> -->
                     </div>
+                    <div class="text-end">
+                    <!-- From Uiverse.io by Creatlydev --> 
+<button href="#" class="button" style="--clr: #7808d0">
+    <span class="button__icon-wrapper">
+      <svg
+        viewBox="0 0 14 15"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        class="button__icon-svg"
+        width="10"
+      >
+        <path
+          d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+          fill="currentColor"
+        ></path>
+      </svg>
+  
+      <svg
+        viewBox="0 0 14 15"
+        fill="none"
+        width="10"
+        xmlns="http://www.w3.org/2000/svg"
+        class="button__icon-svg button__icon-svg--copy"
+      >
+        <path
+          d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+          fill="currentColor"
+        ></path>
+      </svg>
+    </span>
+   Show More
+  </button>
+  
+                      </div>
                 </div>
             </div>
 
             <!-- Shared Icons Section -->
-            <div class="card rounded-lg border shadow-sm">
+            <div class="card rounded-lg border shadow-sm mt-3.5">
                 <div class="p-6 pb-4">
                     <div class="flex items-center justify-between">
                         <div class="flex items-center space-x-2">
@@ -851,7 +1264,7 @@
         </div>
 
         <!-- Installation Guide -->
-        <div class="mt-12 card rounded-lg border shadow-sm">
+        <div class="mt-12 card rounded-lg border shadow-sm mx-3">
             <div class="p-6">
                 <h2 class="text-lg font-semibold mb-4">Installation</h2>
                 <div class="space-y-4">
